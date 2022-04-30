@@ -2,15 +2,23 @@
 
 ## Table of Contents
 
-1. [Messaging](#Messaging)
-
+1. [Object](#Object)
+	* [Definition](#Definition)
+	* [Messaging](#Messaging)
+	* [Externals/Internals][#Externals/Internals]
+2. [Encapsulation](#Encapsulation)
+	* [Definition](#Definition)
+	* [Giving Access to Data](#Giving-Access-to-Data)
+	* [Real World Analogy](#Real-World-Analogy)
+	* [Comparison to Functional Software Design](#Comparison-to-Functional-Software-Design)
+4. [Nouns Instead of Verbs](#Nouns-Instead-of-Verbs)
 
 ## Description
+This article explains the basics of object-oriented design in software development.
 
+## Object
 
-## Objects
-
-#### Object: data + operations on that data
+#### Definition
 Object-oriented design is a software development approach that solves the problem by creating a system of interacting *objects*. 
 
 Every object is a composition of data and operations that manipulate the data. That data is contained in object's *fields*, that represent its properties. The operations are, in turn, represented by object's *methods*, which are algorithms that manipulate the data contained in the object. Such bundle of data and operations results in situation, when every object is exclusively responsible for its own manipulation.
