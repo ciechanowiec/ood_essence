@@ -14,7 +14,7 @@
 4. [Nouns Instead of Verbs](#Nouns-Instead-of-Verbs)
 
 ## Description
-This article explains the basics of object-oriented design in software development.
+This document explains the basics of object-oriented design in software development.
 
 ## Object
 
