@@ -3,11 +3,11 @@
 ## Table of Contents
 
 1. [Object](#Object)
-	* [Definition](#Definition)
+	* [Definition of Object](#Definition-of-Object)
 	* [Messaging](#Messaging)
 	* [Externals/Internals](#Externals/Internals)
 2. [Encapsulation](#Encapsulation)
-	* [Definition](#Definition)
+	* [Definition of Encapsulation](#Definition-of-Encapsulation)
 	* [Giving Access to Data](#Giving-Access-to-Data)
 	* [Real World Analogy](#Real-World-Analogy)
 	* [Comparison to Functional Software Design](#Comparison-to-Functional-Software-Design)
@@ -18,7 +18,7 @@ This article explains the basics of object-oriented design in software developme
 
 ## Object
 
-#### Definition
+#### Definition of Object
 Object-oriented design is a software development approach that solves the problem by creating a system of interacting *objects*. 
 
 Every object is a composition of data and operations that manipulate the data. That data is contained in object's *fields*, that represent its properties. The operations are, in turn, represented by object's *methods*, which are algorithms that manipulate the data contained in the object. Such bundle of data and operations results in situation, when every object is exclusively responsible for its own manipulation.
@@ -40,7 +40,7 @@ Every object has two parts, and so may be viewed from two different ways: there 
 
 ## Encapsulation
 
-#### Definition
+#### Definition of Encapsulation
 The data stored in an object can be accessed or modified only though the methods of that object. The data stored in an object cannot be accessed or modified directly by another object, bypassing the methods of the object, in which that data is stored. Hiding object's data in such a way is called _encapsulation_.
 > (...) that _encapsulation_ is a language feature that enforces information hiding. A module’s implementation is hidden in a separate block with a formally specified interface. An object knows things about itself, but not about any other object. If one object needs information about another object, it must request that information from that object. (...)
 > 
