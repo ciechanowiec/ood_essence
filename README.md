@@ -5,7 +5,7 @@
 1. [Object](#Object)
 	* [Definition](#Definition)
 	* [Messaging](#Messaging)
-	* [Externals/Internals][#Externals/Internals]
+	* [Externals/Internals](#Externals/Internals)
 2. [Encapsulation](#Encapsulation)
 	* [Definition](#Definition)
 	* [Giving Access to Data](#Giving-Access-to-Data)
