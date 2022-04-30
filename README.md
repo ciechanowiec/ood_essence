@@ -21,7 +21,7 @@ This article explains the basics of object-oriented design in software developme
 #### Definition of Object
 Object-oriented design is a software development approach that solves the problem by creating a system of interacting *objects*. 
 
-Every object is a composition of data and operations that manipulate the data. That data is contained in object's *fields*, that represent its properties. The operations are, in turn, represented by object's *methods*, which are algorithms that manipulate the data contained in the object. Such bundle of data and operations results in situation, when every object is exclusively responsible for its own manipulation.
+Every object is a composition of data and operations that manipulate the data. That data is contained in object's *fields*, which represent its properties. The operations are, in turn, represented by object's *methods*, which are algorithms that manipulate the data stored in the object. Such bundle of data and operations results in situation, when every object is exclusively responsible for its own manipulation.
 
 > The object-oriented view is one of a world of interacting objects. Each object has responsibility for its own actions. In the procedural paradigm, data objects are considered passive and are acted upon by the program. In the object-oriented paradigm, data objects are active. Objects and the code that manipulates them are bundled together, making each object responsible for its own manipulation
 > 
