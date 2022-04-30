@@ -5,7 +5,7 @@
 1. [Object](#Object)
 	* [Definition of Object](#Definition-of-Object)
 	* [Messaging](#Messaging)
-	* [Externals/Internals](#Externals/Internals)
+	* [Externals vs Internals](#Externals-vs-Internals)
 2. [Encapsulation](#Encapsulation)
 	* [Definition of Encapsulation](#Definition-of-Encapsulation)
 	* [Giving Access to Data](#Giving-Access-to-Data)
@@ -35,7 +35,7 @@ Objects communicate with one another by sending messages, i.e., by invoking one 
 2) **informational message**, which is similar to an imperative in the sense that no response is expected. It differs from an imperative in that there is also no expectation that the receiving object will do anything at all in response to the message;
 3) **interrogatory message**, which is any request for a service. The object always returns an object (a typed value) that encapsulates the result requested. The returned object can be simple (a character or a string) or arbitrarily complex.
 
-#### Externals/Internals
+#### Externals vs Internals
 Every object has two parts, and so may be viewed from two different ways: there is an outside view and an inside view, object's externals and internals. Whereas the outside view of an object serves to capture the abstract behavior of the object, the inside view indicates how that behavior is implemented. Thus, by seeing only the outside view, one object can interact with another without knowing how the other is represented or implemented. When designing a system, we first concern ourselves with the outside view. The outside view of an object is its specification (*G. Booch, op. cit., p. 216*). 
 
 ## Encapsulation
