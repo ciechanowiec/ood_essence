@@ -41,7 +41,7 @@ Every object has two parts, and so may be viewed from two different ways: there 
 ## Encapsulation
 
 #### Definition of Encapsulation
-The data stored in an object can be accessed or modified only though the methods of that object. The data stored in an object cannot be accessed or modified directly by another object, bypassing the methods of the object, in which that data is stored. Hiding object's data in such a way is called _encapsulation_.
+The data stored in an object can be accessed or modified only through the methods of that object. The data stored in an object must not be accessed neither modified directly by another object, i.e. bypassing the methods of the object, in which that data is stored. Hiding object's data in such a way is called _encapsulation_.
 > (...) that _encapsulation_ is a language feature that enforces information hiding. A module’s implementation is hidden in a separate block with a formally specified interface. An object knows things about itself, but not about any other object. If one object needs information about another object, it must request that information from that object. (...)
 > 
 > The only way to manipulate the data fields of [an object] (...) is through the methods (subprograms) defined in the [the object] (...)
@@ -57,7 +57,7 @@ Nevertheless, giving access to the internal object's data must not break encapsu
 The idea of encapsulation has many real world analogies, such as an automobile engine:
 > (...) [Encapsulation] and information hiding are actually quite natural activities. We employ [encapsulation] (...) daily and tend to develop models of reality by identifying the objects and operations that exist at each level of interaction. Thus, when driving a car, we consider the accelerator, gauges, steering wheel, and brake (among other objects) as well as the operations we can perform upon them and the effect of those operations. When repairing an automobile engine, we consider objects at a lower level of abstraction, such as the fuel pump, carburetor, and distributor.
 > 
-> Similarly, a program that implements a model of reality (as all of them should) may be viewed as a set of objects that interact with one another. (...)
+> Similarly, a program that implements a model of reality (as all of them should) may be viewed as a set of objects that interact with one another
 > 
 > *G. Booch, op. cit., p. 213*
 
@@ -67,12 +67,12 @@ One of the side-effects of functional software design is that all relevant data 
 The main difference between functional software design and object-oriented software design can be shown on the example of calculating student's grade point average (GPA). In the first case we would concentrate on developing a program procedure, which task will be to calculate the GPA for for the provided data, while in the second case we would concentrate on developing a separate `Student` object that will be responsible for calculating its own GPA. The distinction is both subtle and profound. The final code for the calculation may look the same, but it is executed in different ways. In a program based on a functional software design, the program calls the subprogram that calculates the GPA, passing the `Student` object as a parameter. In an object-oriented program, a message is sent to the object to calculate its GPA. There are no parameters because the object to which the message is sent knows its own data (*N. Dale, J. Lewis, op. cit., p. 294*).
 
 ## Nouns Instead of Verbs
-One of effective approaches for understanding object-oriented design is to think in terms of nouns instead of verbs. Here is how it was explained in Apple's guide for developers from 1988:
+One of effective approaches for understanding object-oriented design is to think in terms of nouns instead of verbs. Here is how it was explained in an Apple's guide for developers from 1988:
 > If procedures and functions are verbs and pieces of data are nouns, a procedure-oriented program is organized around verbs and an object-oriented program is organized around nouns. Imagine that you had a program that operated on dogs, mice, and cats. Further, imagine that the program needed to implement eating and running methods for the dogs, mice, and cats
 > 
 > *- Apple Computer (publisher), Programmers Introduction to the Macintosh Family, 1988, p. 142.*
 
-As an example of verb-oriented (procedure-oriented) way of thinking the authors presented the following pseudocode:
+As an example of verb-oriented (procedure-oriented) way of thinking the authors of the mentioned guide presented the following pseudocode:
 ```
 dog = RECORD
 mouse = RECORD
@@ -89,6 +89,7 @@ PROCEDURE Run(animal)
 END
 ```
 *- Apple Computer (publisher), op. cit., p. 143.*
+
 While the noun-oriented (object-oriented) program looked like this:
 ```
 dog = OBJECT
