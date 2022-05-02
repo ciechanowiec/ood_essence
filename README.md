@@ -44,7 +44,7 @@ Every object has two parts, and so may be viewed from two different ways: there 
 The data stored in an object can be accessed or modified only through the methods of that object. The data stored in an object must not be accessed neither modified directly by another object, i.e. bypassing the methods of the object, in which that data is stored. Hiding object's data in such a way is called _encapsulation_.
 > (...) that _encapsulation_ is a language feature that enforces information hiding. A module’s implementation is hidden in a separate block with a formally specified interface. An object knows things about itself, but not about any other object. If one object needs information about another object, it must request that information from that object. (...)
 > 
-> The only way to manipulate the data fields of [an object] (...) is through the methods (subprograms) defined in the [the object] (...)
+> The only way to manipulate the data fields of [an object] (...) is through the methods (subprograms) defined in the [object] (...)
 > 
 > *\-  N. Dale, J. Lewis, op. cit., p. 314.*
 > 
